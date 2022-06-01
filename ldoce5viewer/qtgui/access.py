@@ -86,7 +86,7 @@ class MyUrlSchemeHandler(QWebEngineUrlSchemeHandler):
         (data, mime) = self._ldoce5.get_content(path)
         return (data, mime)
 
-    def requestStarted(self, job: QWebEngineUrlRequestJob):
+    def requestStarted(self, job):
         url = job.requestUrl()
         scheme = url.scheme()
         mime = "text/html"

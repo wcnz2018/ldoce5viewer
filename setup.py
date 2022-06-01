@@ -85,7 +85,7 @@ else:
                     "includes": ["sip", "lxml._elementpath"],
                     "packages": [],
                     "excludes": [
-                        "email",
+                        #"email",
                         "sqlite3",
                         "PyQt5.QtCLucene",
                         "PyQt5.QtHtml",
@@ -107,7 +107,7 @@ else:
                 }
             },
             data_files=[
-                ("qt_plugins/imageformats", [qt_plugins_path]),
+                #("qt_plugins/imageformats", [qt_plugins_path]),
                 ("", ["ldoce5viewer/static"]),
             ],
         )

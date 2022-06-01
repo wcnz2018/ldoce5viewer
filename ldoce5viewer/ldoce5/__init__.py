@@ -38,13 +38,13 @@ class LDOCE5(object):
         self._data_dir = data_dir
         self._filemap_path = filemap_path
 
-    def get_content(self, path) -> Tuple[bytes, str]:
+    def get_content(self, path):# -> Tuple[bytes, str]:
         try:
             archive, name = path.lstrip("/").split("/", 1)
         except ValueError:
             raise NotFoundError(u"invalid path")
 
-        def load_content(archive_name, name) -> bytes:
+        def load_content(archive_name, name):# -> bytes:
             # try:
             #    return load_from_cdb_archive(
             #            self._data_dir, archive_name, name)
